@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    max-width: 100%;
+    min-width: 320px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    color: white; 
+    background-color: #0B0C10;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.App {
+    width: 800px;
+}
+
+.post {
+    background-color: #1F2833;
+    border: 2px solid #66FCF1;
+    display: flex;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform .3s;
+    cursor: pointer;
+}
+
+.post__btns {
+    display: flex;
+}
+
+.post-enter {
+    transform: scale3d(0.05, 0.05, 1);
+}
+
+.post-enter-active {
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+
+.post-exit {
+    opacity: 1;
+}
+
+.post-exit-active {
+    opacity: 0;
+    transform: scale3d(0.05, 0.05, 1);
+    transition: all 500ms ease-in;
+}
+
+.page__wrapper{
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.page{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #45A29E;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.page__current{
+    background-color: #66FCF1;
+    font-weight: bold;
+}
+
+
